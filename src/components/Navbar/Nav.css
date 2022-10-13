@@ -1,0 +1,25 @@
+.icon div {
+    height: 2px !important;
+    background: #fff;
+    margin: 7px 0px 7px 0px;
+    border-radius: 45px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.one {
+    width: 20px;
+}
+
+.two {
+    width: 25px;
+}
+
+.three {
+    width: 20px;
+}
+
+.icon:hover div {
+    width: 30px;
+}
+  
