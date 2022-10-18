@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   height: 80px;
-  background: black;
+  background: transparent;
   padding: 0px;
   position: sticky;
   top: 0;
@@ -21,9 +21,11 @@ export const NavContainer = styled.div`
   z-index: 1;
   width: 100%;
   color: white;
+  font-family: "Carter One", cursive;
 `;
 export const NavLogo = styled.div`
   justify-self: flex-start;
+  color: #feb300;
   cursor: pointer;
   font-size: 45px;
   height: auto;
@@ -33,12 +35,20 @@ export const NavLogo = styled.div`
 `;
 export const MobileIcon = styled.div`
   cursor: pointer;
+  color: black;
   width: 30px;
-  display: block;
+  display: none;
   margin: 12px auto;
   padding: 8px 10px;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
+  position: absolute;
+  top: 0;
+  right: 15px;
+
+  @media screen and (max-width: 960px) {
+    display: block;
+  }
 `;
 
 export const NavMenu = styled.div`
@@ -46,12 +56,12 @@ export const NavMenu = styled.div`
   align-items: center;
   list-style: none;
   text-align: center;
-  height: 80px;
-  color: white;
+  // height: 80px;
+  margin-right: 3rem;
 
-  //   @media screen and (max-width: 960px) {
-  //     display: none;
-  //   }
+  @media screen and (max-width: 960px) {
+    display: none;
+  }
 `;
 export const NavItem = styled.div`
   height: 80px;
@@ -61,12 +71,16 @@ export const NavLinks = styled.a`
   align-items: center;
   color: white;
   text-decoration: none;
-  padding: 0 12px;
+  padding: 0 17px;
   height: 80px;
   cursor: pointer;
   &:hover {
-    border-bottom: 3px solid white);
-    color: rgb(226, 117, 189);
+    border-bottom: 3px solid #feb300;
+    color: #feb300;
     text-shadow: 1px 1px 1px #80808091;
   }
+  ,
+  // &:active {
+    
+  // }
 `;

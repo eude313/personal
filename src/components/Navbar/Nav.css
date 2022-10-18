@@ -1,25 +1,29 @@
+.navbar{
+    background-color: transparent;
+} 
+.navbar.colorChange{
+    background-color: black;
+}
+
+.bj{
+    color: #feb300;
+}
+.bj :hover {
+    color: #fff; 
+}
 .icon div {
-    height: 2px !important;
+    height: 3px; 
     background: #fff;
-    margin: 7px 0px 7px 0px;
+    margin: 5px 0px 7px 0px;
     border-radius: 45px;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
+    /* background: linear-gradient(to left, rgba(120,0,0,0), rgb(247, 245, 245)); */
 }
-
-.one {
+.two, .four{
     width: 20px;
+    position: relative;
+    left: 4.5px;
 }
 
-.two {
-    width: 25px;
-}
-
-.three {
-    width: 20px;
-}
-
-.icon:hover div {
-    width: 30px;
-}
   

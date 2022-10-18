@@ -1,0 +1,16 @@
+.col{
+  display: flex;
+  justify-content: space-around;
+}
+.text3{
+    color: #feb300;
+}
+.text{
+    color: #6e6e6ed7;
+    opacity:  0.9;
+    text-shadow: 0 0 3px black;
+    font-family: 'Carter One', cursive;
+}
+.aboutbtn{
+    margin-left: 30px;
+}
