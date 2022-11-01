@@ -13,7 +13,6 @@ import { easeQuadInOut } from "d3-ease";
 import AnimatedProgressProvider from "./AnimatedProgressProvider";
 
 export default function Skill() {
-  const percentage = 66;
   const id = "skills";
   return (
     <>

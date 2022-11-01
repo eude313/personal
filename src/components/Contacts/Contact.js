@@ -119,7 +119,7 @@ export default function Contact() {
                   </div>
                   <div className='btn'>
                     <div>
-                      <a to='/Home'>
+                      <a href='/'>
                         <span></span>
                         <span></span>
                         <span></span>

@@ -10,7 +10,6 @@ import {
 } from "./NavStyle";
 import "./Nav.css";
 import { AiOutlineDingding } from "react-icons/ai";
-import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function Navbar({ toggle }) {
   const [colorChange, setColorchange] = useState(false);
