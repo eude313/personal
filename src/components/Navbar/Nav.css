@@ -1,5 +1,6 @@
 .navbar{
     background-color: transparent;
+    text-shadow: 0 0 3px black;
 } 
 .navbar.colorChange{
     background-color: black;
@@ -7,18 +8,20 @@
 
 .bj{
     color: #feb300;
+    text-shadow: 0 0 3px black;
 }
 .bj :hover {
     color: #fff; 
 }
 .icon div {
     height: 3px; 
-    background: #fff;
+    background: #feb300;
+    text-shadow: 0 0 3px black;
     margin: 5px 0px 7px 0px;
     border-radius: 45px;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
-    /* background: linear-gradient(to left, rgba(120,0,0,0), rgb(247, 245, 245)); */
+    background: linear-gradient(to left, #cea851, rgb(240, 130, 6));
 }
 .two, .four{
     width: 20px;
@@ -26,4 +29,7 @@
     left: 4.5px;
 }
 
-  
+/* .nav-item .active {
+    border-bottom: 3px solid #feb300;
+    color: #feb300;
+}  */

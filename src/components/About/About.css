@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
 }
-.text3{
+.textR{
     color: #feb300;
 }
 .text{
@@ -11,6 +11,108 @@
     text-shadow: 0 0 3px black;
     font-family: 'Carter One', cursive;
 }
+
+
+
+/*top container*/
+
+.textW{
+    font-size: 4rem;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 2px;
+    color: #202020;
+    opacity: 0.9;
+    text-shadow: 0 0 3px black;
+    margin:0px;
+  }
+  
+  .textY{
+    z-index: 1;
+    font-family: 'Carter One', cursive;
+    letter-spacing: 3px;
+    font-size: 3rem;
+    text-shadow: 0 0 3px #feb300;
+    position: absolute;
+    margin:0px;
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+    .textW{
+      font-size: 4rem;
+      letter-spacing: 2px;
+      text-shadow: 0 0 3px black;
+    }
+    
+    .textY{
+      letter-spacing: 1px;
+      font-size: 2.7rem;
+    }
+  
+  }
+  @media only screen and (max-width: 600px) {
+    .textW{
+      font-size: 3.5rem;
+      letter-spacing: 1px;
+      text-shadow: 0 0 3px black;
+    }
+    
+    .textY{
+      letter-spacing: 1px;
+      font-size: 2.7rem;
+    }
+  
+  }
+
+
 .aboutbtn{
-    margin-left: 30px;
+    /* display: flex;
+    justify-content: flex-start; */
+    margin-left: 38px;
+    height: 70px;
+}
+.aboutbtn > a{
+  text-decoration: none;
+}
+@media only screen and (max-width: 960px) {
+    .aboutbtn{
+        display: flex;
+        justify-content: center;
+    } 
+}
+.card{
+    height: 205px;
+    display: flex;
+}
+.card h1{
+    color: #feb300;
+    margin: 2px 10px;
+    padding: 18px;
+    font-family: "Carter One", cursive;
+    font-size: 3rem;
+}
+.card h3{
+    color: #fff;
+    margin-top: 13px;
+    margin-left: 15px;
+    padding: 10px;
+    font-family: "Courgette", cursive;
+    font-size: 1rem;
+}
+@media only screen and (max-width: 690px) {
+    .col{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .aboutbtn{
+        margin-bottom: 10px;
+    }
+    .card{
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }

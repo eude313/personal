@@ -26,3 +26,55 @@
 @media only screen and (min-width: 1200px) {
 .example {background: pink;}
 }
+
+
+
+font-family: 'Kaushan Script', cursive;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.boxA{
+  height: 70px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  border: 1px solid seagreen;
+}
+.boxA label{
+  /* position: absolute; */
+  /* top:70px;
+  left: 1; */
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+.boxA input:focus ~ label,
+.boxA input:valid ~ label {
+top: 59px;
+color: #feb300;
+font-size: 12px;
+}
+
+.boxA input {
+  width: 100%;
+  padding-top: 40px; 
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #feb300;
+  outline: none;
+  background: transparent;
+}

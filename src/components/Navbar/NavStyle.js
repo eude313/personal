@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
 export const Nav = styled.nav`
   height: 80px;
@@ -56,7 +57,6 @@ export const NavMenu = styled.div`
   align-items: center;
   list-style: none;
   text-align: center;
-  // height: 80px;
   margin-right: 3rem;
 
   @media screen and (max-width: 960px) {
@@ -66,7 +66,7 @@ export const NavMenu = styled.div`
 export const NavItem = styled.div`
   height: 80px;
 `;
-export const NavLinks = styled.a`
+export const NavLinks = styled(Link)`
   display: flex;
   align-items: center;
   color: white;
@@ -75,12 +75,11 @@ export const NavLinks = styled.a`
   height: 80px;
   cursor: pointer;
   &:hover {
-    border-bottom: 3px solid #feb300;
     color: #feb300;
-    text-shadow: 1px 1px 1px #80808091;
   }
-  ,
-  // &:active {
-    
-  // }
+  &.active {
+    border-top: 3px solid #feb300;
+    color: #feb300;
+  }
+  }
 `;

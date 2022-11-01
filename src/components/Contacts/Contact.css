@@ -1,0 +1,312 @@
+.text3{
+    color: #feb300;
+}
+
+/*top container*/
+
+.text1{
+  font-size: 4rem;
+  font-family: 'Alfa Slab One', cursive;
+  letter-spacing: 4px;
+  color: #202020;
+  opacity: 0.9;
+  margin: 0px;
+  text-shadow: 0 0 3px black;
+}
+
+.text2{
+  z-index: 1;
+  font-family: 'Carter One', cursive;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  text-shadow: 0 0 3px #feb300;
+  position: absolute;
+  margin:0px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .text1{
+    font-size: 4rem;
+    letter-spacing: -1px;
+    text-shadow: 0 0 3px black;
+  }
+  
+  .text2{
+    letter-spacing: 2px;
+    font-size: 2.8rem;
+    /* padding-top: 8px ; */
+  }
+
+}
+
+/* container 1*/
+
+.head{
+    color: #fff;
+    padding: 0 10px;
+    margin: 0px;
+    text-align: center;
+}
+.head h1{
+    font-family: 'Carter One', cursive;
+    margin: 4px 0px;
+}
+.head p{
+  font-family: "Courgette", cursive;
+  margin: 10px 0px;
+}
+.box-map{
+  padding:8px 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+.map{
+    display: flex;
+    margin: 4px 0px;
+    width: 300px;
+    color: #fff;
+    height: 100px;
+}
+
+.bx1 {
+  margin: 0px;
+  padding: 0px;
+}
+.bx1 h1{
+  margin: 10px auto;
+  font-size: 60px;
+  color: #feb300;
+}
+.bx2{
+  padding: 10px  6px;
+}
+.bx2 h2{
+  font-family: 'Carter One', cursive;
+  margin: 0px;
+}
+.bx2 p{
+  font-family: "Courgette", cursive;
+  margin: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+  .map{
+    width: 200px; 
+}
+.bx1 h1{
+  font-size: 40px;
+}
+.bx2 h2{
+  font-size: medium;
+}
+.bx2 p{
+  font-size: small;
+}
+}
+
+/* container 2*/
+.box form{
+  font-family: 'Carter One', cursive;
+
+}
+.box{
+  width: 100%;
+}
+.bo1{
+  width: 100%;
+}
+
+.cont1{
+  height: 70px;
+  margin: 10px 0px;
+}
+.cont1 label{
+  position: absolute;
+  top: 2rem;
+  left: 10px;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+.cont1 input:focus ~ label,
+.cont1 input:valid ~ label {
+top: 5px;
+color: #feb300;
+font-size: 12px;
+}
+
+.cont1 input {
+  width: 99%;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  margin-top: 40px;
+  border-bottom: 1px solid #feb300;
+  outline: none;
+  background: transparent;
+}
+
+.cont2{
+  height: 70px;
+  margin: 10px 0px;
+}
+
+.cont2 label{
+  position: absolute;
+  top: 7rem;
+  left: 10px;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+.cont2 input:focus ~ label,
+.cont2 input:valid ~ label {
+top: 5rem;
+color: #feb300;
+font-size: 12px;
+}
+
+.cont2 input {
+  width: 99%;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  margin-top: 40px;
+  border-bottom: 1px solid #feb300;
+  outline: none;
+  background: transparent;
+}
+
+.cont3{
+  height: 70px;
+  margin: 10px 0px;
+}
+.cont3 label{
+  position: absolute;
+  top: 12rem;
+  left: 10px;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+.cont3 input:focus ~ label,
+.cont3 input:valid ~ label {
+top: 10rem;
+color: #feb300;
+font-size: 12px;
+}
+
+.cont3 input {
+  width: 99%;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  margin-top: 40px;
+  border-bottom: 1px solid #feb300;
+  outline: none;
+  background: transparent;
+}
+
+.cont4{
+  height: 150px;
+  margin: 10px 0px;
+}
+
+.cont4 label{
+  position: absolute;
+  top: 22rem;
+  left: 10px;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+.cont4 input:focus ~ label,
+.cont4 input:valid ~ label {
+top: 16rem;
+color: #feb300;
+font-size: 12px;
+}
+
+.cont4 input {
+  width: 99%;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  margin-top: 120px;
+  border-bottom: 1px solid #feb300;
+  outline: none;
+  background: transparent;
+}
+
+
+/* button */
+.btn{
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #feb300;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0px 10px;
+    letter-spacing: 4px;
+    font-family: 'Carter One', cursive;
+  }
+  
+  .box a:hover {
+    background: black;
+    color: #feb300;
+    border-radius: 5px;
+    box-shadow: 0 0 25px #feb300;
+  }
+  
+  .box a span {
+    position: absolute;
+    display: block;
+  }
+  
+    
+  .box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #feb300);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+
+  

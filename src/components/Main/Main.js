@@ -8,8 +8,8 @@ import {
   MainText,
   MainButton,
 } from "./MainStyle";
-import { Fade } from "react-reveal";
-import Jump from "react-reveal/Jump";
+import "./Main.css";
+import { Fade, Flip } from "react-reveal";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { MdOutlineWavingHand } from "react-icons/md";
 
@@ -24,35 +24,37 @@ const styles = {
   },
   icon: {
     paddingLeft: "18px",
-    fontSize: "43px",
+    fontSize: "41px",
     color: "#feb300",
     position: "relative",
-    bottom: "-16px",
-    right: "-0.89px",
+    bottom: "-15px",
+    right: "-1px",
   },
 };
 
 export default function Main() {
+  const id = "/";
   return (
     <>
-      <MainContainer>
+      <MainContainer id={id}>
         <MainWrapper>
           <MainContent>
             <MainBg1></MainBg1>
-            <Fade left>
+            <Flip left>
               <MainBg>
                 <img
                   src={process.env.PUBLIC_URL + "./Media/eudes.png"}
                   style={styles.image}
+                  className='responsive'
                   alt='charles eudes'
                 />
               </MainBg>
-            </Fade>
+            </Flip>
           </MainContent>
 
           <MainText>
             <Fade
-              right
+              top
               cascade>
               <div>
                 <h1 style={styles.h1}>
@@ -65,12 +67,13 @@ export default function Main() {
                   about bulding excellent software that improves the lives of
                   those around me
                 </p>
-                <Jump>
-                  <MainButton to=''>
+
+                <div className='mainbtn'>
+                  <MainButton to='about'>
                     more about me
                     <BsFillArrowRightCircleFill style={styles.icon} />
                   </MainButton>
-                </Jump>
+                </div>
               </div>
             </Fade>
           </MainText>

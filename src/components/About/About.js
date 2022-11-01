@@ -6,93 +6,119 @@ import {
   AboutColumn1,
   AboutColumn2,
   AboutButton,
+  Card,
 } from "./AboutStyle";
 import "./About.css";
-import { MdDownloadForOffline } from "react-icons/md";
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import { Fade } from "react-reveal";
 
 const AboutCont = {
-  text1: {
-    fontFamily: "'Alfa Slab One', cursive",
-    fontSize: "70px",
-    letterSpacing: "3px",
-    color: "#202020",
-    opacity: " 0.9",
-    textShadow: "0 0 3px black",
-  },
-  text2: {
-    zIndex: "1",
-    fontFamily: "'Carter One', cursive",
-    letterSpacing: "3px",
-    fontSize: "50px",
-    textShadow: "0 0 3px #feb300",
-    position: "absolute",
-  },
-  icon: {
+  icons: {
     paddingLeft: "18px",
-    fontSize: "47px",
+    fontSize: "41px",
     color: "#feb300",
     position: "relative",
-    bottom: "-17.3px",
-    right: "-4px",
+    top: "15px",
+    right: "-1px",
   },
 };
 
 export default function About() {
+  const id = "about";
   return (
     <>
-      <AboutContainer>
+      <AboutContainer id={id}>
         <AboutWrapper>
-          <h1 style={AboutCont.text1}>READ ME</h1>
-          <h1 style={AboutCont.text2}>
-            ABOUT <span className='text3'>ME</span>
+          <h1 className='textW'>READ ME</h1>
+          <h1 className='textY'>
+            ABOUT <span className='textR'>ME</span>
           </h1>
         </AboutWrapper>
         <AboutContent>
           <AboutColumn1>
             <div className='col'>
-              <div>
-                <h3>
-                  <span className='text'>First Name:</span> Eudes
-                </h3>
-                <h3>
-                  <span className='text'>Age:</span> 23
-                </h3>
-                <h3>
-                  <span className='text'>Freelance:</span> Available
-                </h3>
-                <h3>
-                  <span className='text'>Phone:</span> +25323731295
-                </h3>
-                <h3>
-                  <span className='text'>github:</span> Eude313@github.com
-                </h3>
-              </div>
-              <div>
-                <h3>
-                  <span className='text'>Last Name:</span> Charles
-                </h3>
-                <h3>
-                  <span className='text'>Nationality:</span> Kenyan
-                </h3>
-                <h3>
-                  <span className='text'>Address:</span> Nairobi, Kenya
-                </h3>
-                <h3>
-                  <span className='text'>Languages:</span> English, Kiswahili
-                </h3>
-                <h3>
-                  <span className='text'>Email:</span> Charleseudes9@gmail.com
-                </h3>
-              </div>
+              <Fade
+                cascade
+                left>
+                <div>
+                  <h3>
+                    <span className='text'>First Name:</span> Eudes
+                  </h3>
+                  <h3>
+                    <span className='text'>Age:</span> 23
+                  </h3>
+                  <h3>
+                    <span className='text'>Freelance:</span> Available
+                  </h3>
+                  <h3>
+                    <span className='text'>Phone:</span> +25323731295
+                  </h3>
+                  <h3>
+                    <span className='text'>github:</span> Eude313@github.com
+                  </h3>
+                </div>
+              </Fade>
+              <Fade
+                cascade
+                left>
+                <div>
+                  <h3>
+                    <span className='text'>Last Name:</span> Charles
+                  </h3>
+                  <h3>
+                    <span className='text'>Nationality:</span> Kenyan
+                  </h3>
+                  <h3>
+                    <span className='text'>Address:</span> Nairobi, Kenya
+                  </h3>
+                  <h3>
+                    <span className='text'>Languages:</span> English, Kiswahili
+                  </h3>
+                  <h3>
+                    <span className='text'>Email:</span> Charleseudes9@gmail.com
+                  </h3>
+                </div>
+              </Fade>
             </div>
             <div className='aboutbtn'>
-              <AboutButton to=''>
-                Download Cv
-                <MdDownloadForOffline style={AboutCont.icon} />
-              </AboutButton>
+              <Fade left>
+                <AboutButton href='https://drive.google.com/file/d/1QF7ObxDj5fsE6MPz1-qVWgxKDfEJh-ok/view?usp=sharing'>
+                  View Resume
+                  <BsFillArrowRightCircleFill style={AboutCont.icons} />
+                </AboutButton>
+              </Fade>
             </div>
           </AboutColumn1>
-          <AboutColumn2></AboutColumn2>
+          <AboutColumn2>
+            <Fade
+              top
+              cascade>
+              <div className='card'>
+                <Card>
+                  <h1>1+</h1>
+                  <h3>— YEARS OF EXPERIENCE</h3>
+                </Card>
+                <Card>
+                  <h1>10+</h1>
+                  <h3>— COMPLETED PROJECTS</h3>
+                </Card>
+              </div>
+            </Fade>
+            <Fade
+              top
+              cascade>
+              <div className='card'>
+                <Card>
+                  <h1>10+</h1>
+                  <h3>— HAPPY CUSTOMERS</h3>
+                </Card>
+                <Card>
+                  <h1>2+</h1>
+                  <h3>— CERTIFICATIONS</h3>
+                </Card>
+              </div>
+            </Fade>
+          </AboutColumn2>
         </AboutContent>
       </AboutContainer>
     </>

@@ -1,0 +1,46 @@
+/* .eu{
+  font-size: 30px;
+} */
+.ed{
+    color: #feb300;
+    font-size: 2rem;
+    font-family: "Courgette", cursive;
+}
+.icons{
+  margin-left: 50px;
+  padding: 10px; 
+  font-size: 36px;
+  width: auto;
+  height: 32px;
+}
+
+.icons :hover{
+  color: aliceblue;
+}
+
+@media only screen and (max-width: 768px) {
+  .ed{
+      color: #feb300;
+      font-size: 1rem;
+      font-family: "Courgette", cursive;
+  }
+  .icons{
+    padding: 10px; 
+    font-size: 5vw;
+    margin-left: 10px;
+    width: auto;
+    height: 20px;
+  }
+} 
+@media only screen and (max-width: 600px) {
+  .ed{
+    font-size: 15px;
+}
+.icons{
+  padding: 10px; 
+  font-size: 20px;
+  margin-left: 10px;
+  width: auto;
+  height: auto;
+}
+}
